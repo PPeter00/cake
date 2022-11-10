@@ -1,3 +1,4 @@
+
 // Animation on scroll
 AOS.init({
   duration: 800,
@@ -121,35 +122,7 @@ AOS.init({
   };
   carousel();
 
-  var counter = function () {
-    $("#section-counter").waypoint(
-      function (direction) {
-        if (
-          direction === "down" &&
-          !$(this.element).hasClass("ftco-animated")
-        ) {
-          var comma_seperator_number_step = $.animateNumber.numberStepFactories.separator(
-            ","
-          );
-          $(".number").each(function () {
-            var $this = $(this),
-              num = $this.data("number");
-            console.log(num);
-            $this.animateNumber(
-              {
-                number: num,
-                numberStep: comma_seperator_number_step,
-              },
-              7000
-            );
-          });
-        }
-      },
-      { offset: "95%" }
-    );
-  };
-  counter();
-
+ 
   var contentWayPoint = function () {
     var i = 0;
     $(".ftco-animate").waypoint(
