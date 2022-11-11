@@ -5,6 +5,7 @@
 }
 
 html {
+    oveflow: scroll;
   scroll-behavior: smooth;
     overflow-scrolling: touch;
   -webkit-overflow-scrolling:touch;
