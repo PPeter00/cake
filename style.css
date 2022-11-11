@@ -6,6 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+    overflow-scrolling: touch;
+  -webkit-overflow-scrolling:touch;
 }
 
 .ftco-navbar-light {
