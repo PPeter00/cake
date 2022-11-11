@@ -4,11 +4,6 @@
     --tcolor: rgb(172, 133, 60);
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow: scroll;
-}
-
 .ftco-navbar-light {
     background:transparent !important;
     position: absolute;
