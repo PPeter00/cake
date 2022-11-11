@@ -5,10 +5,9 @@
 }
 
 html {
-    oveflow: scroll;
   scroll-behavior: smooth;
-    overflow-scrolling: touch;
-  -webkit-overflow-scrolling:touch;
+  overflow-x: scroll;
+-webkit-overflow-scrolling:touch;
 }
 
 .ftco-navbar-light {
