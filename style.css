@@ -4,7 +4,7 @@
     --tcolor: rgb(172, 133, 60);
 }
 html{
-    overflow: scroll;
+    width: 100%;
     scroll-behavior: smooth;
     height: 100%;
 }
