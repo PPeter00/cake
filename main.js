@@ -6,7 +6,7 @@ AOS.init({
 
 (function ($) {
   "use strict";
-  $(window).stellar({
+  $(body).stellar({
     responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
