@@ -4,7 +4,16 @@ AOS.init({
   easing: "slide",
 });
 
-
+(function ($) {
+  "use strict";
+  $(.owlCarousel).stellar({
+    responsive: true,
+    parallaxBackgrounds: true,
+    parallaxElements: true,
+    horizontalScrolling: false,
+    hideDistantElements: false,
+    scrollProperty: "scroll",
+  });
 
 
   //   full height
