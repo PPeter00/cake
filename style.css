@@ -4,7 +4,8 @@
     --tcolor: rgb(172, 133, 60);
 }
 html{
-    width: 100%;
+    overflow-y:scroll; 
+    position:relative;
     scroll-behavior: smooth;
     height: 100%;
 }
