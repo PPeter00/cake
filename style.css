@@ -3,7 +3,10 @@
     --scolor: #000;
     --tcolor: rgb(172, 133, 60);
 }
-
+body{
+    height: 100%;
+    width: 100%;
+}
 .ftco-navbar-light {
     background:transparent !important;
     position: absolute;
