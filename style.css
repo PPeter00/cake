@@ -3,6 +3,12 @@
     --scolor: #000;
     --tcolor: rgb(172, 133, 60);
 }
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+}
 body{
     height: 100%;
     width: 100%;
