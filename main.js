@@ -13,6 +13,7 @@ AOS.init({
     horizontalScrolling: false,
     hideDistantElements: false,
     scrollProperty: "scroll",
+    positionProperty: 'position'
   });
 
 
