@@ -10,16 +10,15 @@ AOS.init({
     responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
-    horizontalScrolling: false,
+    horizontalScrolling: true,
     hideDistantElements: false,
     scrollProperty: "scroll",
-    document.body.style.overflow = 'auto',
   });
 
   //   full height
   var fullHeight = function () {
     $(".js-fullheight").css("height", $(window).height());
-    document.body.style.overflow = 'auto'
+    
     $(window).resize(function () {
       $(".js-fullheight").css("height", $(window).height());
       
