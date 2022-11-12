@@ -6,7 +6,7 @@ AOS.init({
 
 (function ($) {
   "use strict";
-  $(.owlCarousel).stellar({
+  $(window).stellar({
     responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
