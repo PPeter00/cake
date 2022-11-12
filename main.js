@@ -4,16 +4,7 @@ AOS.init({
   easing: "slide",
 });
 
-(function ($) {
-  "use strict";
-  $(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: true,
-    hideDistantElements: true,
-    scrollProperty: "scroll",
-  });
+
 
 
   //   full height
