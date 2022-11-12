@@ -19,10 +19,8 @@ AOS.init({
   //   full height
   var fullHeight = function () {
     $(".js-fullheight").css("height", $(window).height());
-    document.body.style.overflow = 'auto'
     $(window).resize(function () {
       $(".js-fullheight").css("height", $(window).height());
-      document.body.style.overflow = 'auto'
     });
   };
   fullHeight(); //call that function
