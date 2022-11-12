@@ -11,7 +11,7 @@ AOS.init({
     parallaxBackgrounds: true,
     parallaxElements: true,
     horizontalScrolling: true,
-    hideDistantElements: false,
+    hideDistantElements: true,
     scrollProperty: "scroll",
   });
 
