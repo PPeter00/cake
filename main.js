@@ -27,7 +27,7 @@ AOS.init({
 
   // navbar scroll
   var scrollWindow = function () {
-    $(window).scroll(function () {
+    $(window).scrollToTop(function () {
         var $w = $(this),
           st = $w.scroll(),
           navbar = $(".ftco_navbar"),
