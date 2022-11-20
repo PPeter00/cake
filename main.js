@@ -1,31 +1,4 @@
 
-Skip to content
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-@PPeter00
-techiecoder2079 /
-Cake-Website
-Public
-
-Code
-Issues 1
-Pull requests
-Actions
-Projects
-Security
-
-    Insights
-
-Cake-Website/main.js /
-@techiecoder2079
-techiecoder2079 Add files via upload
-Latest commit 8c2eff7 Nov 18, 2020
-History
-1 contributor
-197 lines (187 sloc) 4.8 KB
 // Animation on scroll
 AOS.init({
   duration: 800,
