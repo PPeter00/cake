@@ -141,6 +141,10 @@ body{
 .owl-carousel .owl-nav .owl-next span::before {
   font-size: 30px;
 }
+.owl-carousel.owl-drag .owl-item{
+    user-select: auto !important;
+    touch-action: auto !important;
+}
 
 .owl-carousel .owl-nav .owl-prev {
   left: 0;
