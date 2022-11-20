@@ -1,4 +1,32 @@
 
+Skip to content
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+@PPeter00
+techiecoder2079 /
+Cake-Website
+Public
+
+Code
+Issues 1
+Pull requests
+Actions
+Projects
+Security
+
+    Insights
+
+Cake-Website/main.js /
+@techiecoder2079
+techiecoder2079 Add files via upload
+Latest commit 8c2eff7 Nov 18, 2020
+History
+1 contributor
+197 lines (187 sloc) 4.8 KB
+// Animation on scroll
 AOS.init({
   duration: 800,
   easing: "slide",
@@ -10,12 +38,10 @@ AOS.init({
     responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
-    horizontalScrolling: true,
+    horizontalScrolling: false,
     hideDistantElements: false,
     scrollProperty: "scroll",
-    positionProperty: 'position'
   });
-
 
   //   full height
   var fullHeight = function () {
@@ -29,44 +55,44 @@ AOS.init({
   // navbar scroll
   var scrollWindow = function () {
     $(window).scroll(function () {
-        var $w = $(this),
-          st = $w.scrollTop(),
-          navbar = $(".ftco_navbar"),
-          sd = $(".js-scroll-wrap");
-        if (st > 150) {
-          if (!navbar.hasClass("scrolled")) {
-            navbar.addClass("scrolled");
-          }
+      var $w = $(this),
+        st = $w.scrollTop(),
+        navbar = $(".ftco_navbar"),
+        sd = $(".js-scroll-wrap");
+      if (st > 150) {
+        if (!navbar.hasClass("scrolled")) {
+          navbar.addClass("scrolled");
         }
-        if (st < 150) {
-          if (navbar.hasClass("scrolled")) {
-            navbar.removeClass("scrolled sleep");
-          }
+      }
+      if (st < 150) {
+        if (navbar.hasClass("scrolled")) {
+          navbar.removeClass("scrolled sleep");
         }
-  
-        if (st > 350) {
-          if (!navbar.hasClass("awake")) {
-            navbar.addClass("awake");
-          }
-          if (sd.length > 0) {
-            sd.addClass("sleep");
-          }
+      }
+
+      if (st > 350) {
+        if (!navbar.hasClass("awake")) {
+          navbar.addClass("awake");
         }
-  
-        if (st < 350) {
-          if (navbar.hasClass("awake")) {
-            navbar.removeClass("awake");
-            navbar.addClass("sleep");
-          }
-          if (sd.length > 0) {
-            sd.removeClass("sleep");
-          }
+        if (sd.length > 0) {
+          sd.addClass("sleep");
         }
-      });
-    };
-    scrollWindow();
-  
-    $.Scrollax();
+      }
+
+      if (st < 350) {
+        if (navbar.hasClass("awake")) {
+          navbar.removeClass("awake");
+          navbar.addClass("sleep");
+        }
+        if (sd.length > 0) {
+          sd.removeClass("sleep");
+        }
+      }
+    });
+  };
+  scrollWindow();
+
+  $.Scrollax();
 
   //   carousel
   var carousel = function () {
@@ -123,7 +149,34 @@ AOS.init({
   };
   carousel();
 
- 
+  var counter = function () {
+    $("#section-counter").waypoint(
+      function (direction) {
+        if (
+          direction === "down" &&
+          !$(this.element).hasClass("ftco-animated")
+        ) {
+          var comma_seperator_number_step = $.animateNumber.numberStepFactories.separator(
+            ","
+          );
+          $(".number").each(function () {
+            var $this = $(this),
+              num = $this.data("number");
+            console.log(num);
+            $this.animateNumber(
+              {
+                number: num,
+                numberStep: comma_seperator_number_step,
+              },
+              7000
+            );
+          });
+        }
+      },
+      { offset: "95%" }
+    );
+  };
+  counter();
 
   var contentWayPoint = function () {
     var i = 0;
@@ -169,4 +222,4 @@ AOS.init({
     autoclose: true,
   });
   $("#book_time").timepicker();
-})(jQuery); 
+})(jQuery);
