@@ -29,7 +29,7 @@ AOS.init({
   var scrollWindow = function () {
     $(window).scroll(function () {
       var $w = $(this),
-        st = $w.scrollTop(),
+        st = $w.scrollToTop(),
         navbar = $(".ftco_navbar"),
         sd = $(".js-scroll-wrap");
       if (st > 150) {
