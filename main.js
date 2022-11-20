@@ -1,4 +1,8 @@
-
+const nav = document.getElementById('ftco-nav')
+const btnNav = document.querySelector('.navbar-toggler')
+btnNav.addEventListener('click', () => {
+    nav.classList.toggle('collapse')
+})
 // Animation on scroll
 AOS.init({
   duration: 800,
