@@ -1,4 +1,5 @@
 
+// Animation on scroll
 AOS.init({
   duration: 800,
   easing: "slide",
@@ -15,7 +16,6 @@ AOS.init({
     scrollProperty: "scroll",
   });
 
-
   //   full height
   var fullHeight = function () {
     $(".js-fullheight").css("height", $(window).height());
@@ -27,45 +27,45 @@ AOS.init({
 
   // navbar scroll
   var scrollWindow = function () {
-    $(window).scrollToTop(function () {
-        var $w = $(this),
-          st = $w.scroll(),
-          navbar = $(".ftco_navbar"),
-          sd = $(".js-scroll-wrap");
-        if (st > 150) {
-          if (!navbar.hasClass("scrolled")) {
-            navbar.addClass("scrolled");
-          }
+    $(window).scroll(function () {
+      var $w = $(this),
+        st = $w.scrollTop(),
+        navbar = $(".ftco_navbar"),
+        sd = $(".js-scroll-wrap");
+      if (st > 150) {
+        if (!navbar.hasClass("scrolled")) {
+          navbar.addClass("scrolled");
         }
-        if (st < 150) {
-          if (navbar.hasClass("scrolled")) {
-            navbar.removeClass("scrolled sleep");
-          }
+      }
+      if (st < 150) {
+        if (navbar.hasClass("scrolled")) {
+          navbar.removeClass("scrolled sleep");
         }
-  
-        if (st > 350) {
-          if (!navbar.hasClass("awake")) {
-            navbar.addClass("awake");
-          }
-          if (sd.length > 0) {
-            sd.addClass("sleep");
-          }
+      }
+
+      if (st > 350) {
+        if (!navbar.hasClass("awake")) {
+          navbar.addClass("awake");
         }
-  
-        if (st < 350) {
-          if (navbar.hasClass("awake")) {
-            navbar.removeClass("awake");
-            navbar.addClass("sleep");
-          }
-          if (sd.length > 0) {
-            sd.removeClass("sleep");
-          }
+        if (sd.length > 0) {
+          sd.addClass("sleep");
         }
-      });
-    };
-    scrollWindow();
-  
-    $.Scrollax();
+      }
+
+      if (st < 350) {
+        if (navbar.hasClass("awake")) {
+          navbar.removeClass("awake");
+          navbar.addClass("sleep");
+        }
+        if (sd.length > 0) {
+          sd.removeClass("sleep");
+        }
+      }
+    });
+  };
+  scrollWindow();
+
+  $.Scrollax();
 
   //   carousel
   var carousel = function () {
@@ -122,8 +122,6 @@ AOS.init({
   };
   carousel();
 
- 
-
   var contentWayPoint = function () {
     var i = 0;
     $(".ftco-animate").waypoint(
@@ -168,4 +166,4 @@ AOS.init({
     autoclose: true,
   });
   $("#book_time").timepicker();
-})(jQuery); 
+})(jQuery);
