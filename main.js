@@ -5,7 +5,7 @@ btnNav.addEventListener('click', () => {
 })
 // Animation on scroll
 AOS.init({
-  duration: 300,
+  duration: 800,
   easing: "slide",
 });
 
