@@ -131,7 +131,7 @@ AOS.init({
     $(".ftco-animate").waypoint(
       function (direction) {
         if (
-          direction === "up" &&
+          direction === "down" &&
           !$(this.element).hasClass("ftco-animated")
         ) {
           i++;
