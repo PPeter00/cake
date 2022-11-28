@@ -11,6 +11,8 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .ftco-navbar-light {
