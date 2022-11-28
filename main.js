@@ -3,6 +3,21 @@ const btnNav = document.querySelector('.navbar-toggler')
 btnNav.addEventListener('click', () => {
     nav.classList.toggle('collapse')
 })
+
+// order cake
+
+const order = document.getElementById('ordercake')
+const orderBtn = documnet.getElementById('orderBtn')
+
+orderBtn.addEventListener('click', () => {
+    order.innerText = `
+    <div class="heading-section ftco-animate mb-5 text-center">
+        <span class="subheading">Thank you so much for your order and for supporting my small business.</span>
+        <h2 class="mb-4">You should receive a confirmation email within a few days.</h2>
+    </div>
+    `
+})
+
 // Animation on scroll
 AOS.init({
   duration: 300,
