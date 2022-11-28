@@ -5,7 +5,7 @@ btnNav.addEventListener('click', () => {
 })
 // Animation on scroll
 AOS.init({
-  duration: 800,
+  duration: 300,
   easing: "slide",
 });
 
@@ -33,7 +33,7 @@ AOS.init({
   var scrollWindow = function () {
     $(window).scroll(function () {
       var $w = $(this),
-        st = $w.scrollTop(),
+        st = $w.scroll(),
         navbar = $(".ftco_navbar"),
         sd = $(".js-scroll-wrap");
       if (st > 150) {
