@@ -7,7 +7,7 @@ btnNav.addEventListener('click', () => {
 // order cake
 
 const orderForm = document.getElementById('ordercake')
-const orderBtn = documnet.getElementById('orderBtn')
+const orderBtn = document.getElementById('orderBtn')
 
 orderBtn.addEventListener('submit', () => {
     orderForm.innerHTML = `
