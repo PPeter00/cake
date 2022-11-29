@@ -774,7 +774,11 @@ html{
   font-size: 25px;
   color: #9b4b15;
 }
-
+.makereservation p{
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+    font-size: 18px;  
+}
 .btn:hover,
 .btn:active,
 .btn:focus {
