@@ -753,17 +753,8 @@ html{
   transform: translateY(-50%);
   color: rgba(0, 0, 0, 0.7);
 }
-
-.makereservation .form-group .select-wrap {
-  position: relative;
-}
-
-.makereservation .form-group .select-wrap select {
-  appearance: none;
-  background-color: var(--color);
-}
 .makereservation .form-group textarea:focus{
-    background-color: var(--color);
+    background: #bebcbacc;
     outline: none;
 }
 
