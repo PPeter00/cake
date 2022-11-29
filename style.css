@@ -719,7 +719,7 @@ html{
 
 
 
-/* about */
+/* order cake */
 
 
 
@@ -742,6 +742,7 @@ html{
   .makereservation .form-group input:focus,.form-group .select-wrap:focus, .form-group textarea:focus {
     outline: none;
     border: none;
+    background: #bebcbacc;
   }
 
 .makereservation .form-group .icon {
