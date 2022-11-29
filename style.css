@@ -725,7 +725,7 @@ html{
 
 .makereservation {
   width: 100%;
-  background: #9b4b1556;
+  background: #bebcbacc;
   margin: 0 auto;
 }
 
@@ -734,9 +734,9 @@ html{
   color: var(--scolor);
 }
 .makereservation .form-group input,.form-group .select-wrap, .form-group textarea {
-    background:var(--color);
+    background:#e6e6e6;
     color: var(--scolor);
-    border: 2px solid #9b4b15a8;
+    border: none;
  
   }
   .makereservation .form-group input:focus,.form-group .select-wrap:focus, .form-group textarea:focus {
