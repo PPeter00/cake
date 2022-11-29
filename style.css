@@ -679,10 +679,13 @@ html{
 }
 
 .staff .img {
-  height: 320px;
-  border-radius: 5px;
-  background-position: top center;
+  height: 450px;
+  border-radius: 50% 50% 5px 5px;
+  background-position: center top;
+  outline: 10px double rgba(247, 247, 247, 0.644);
+  outline-offset: -20px;
 }
+
 
 .staff .text {
   background: #ffffff;
